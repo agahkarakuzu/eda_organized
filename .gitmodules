@@ -7,3 +7,9 @@
 [submodule "external/MOcov"]
 	path = external/MOcov
 	url = https://github.com/MOcov/MOcov.git
+[submodule "external/check_my_code"]
+	path = external/check_my_code
+	url = https://github.com/Remi-Gau/check_my_code.git
+[submodule "external/trk_tools"]
+	path = external/trk_tools
+	url = https://github.com/johncolby/along-tract-stats.git

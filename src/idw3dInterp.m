@@ -1,4 +1,4 @@
-function [fiberHeader,interpolatedFibers] = idw3dInterp_new(fiberHeader,fiberData,volHeader,volData)
+function [fiberHeader,interpolatedFibers] = idw3dInterp(fiberHeader,fiberData,volHeader,volData)
 
 maxSlice_volHeader = volHeader.size(3);
 volHeader.SliceRASidx = zeros(1,maxSlice_volHeader); %(1XN)
