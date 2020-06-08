@@ -1,0 +1,9 @@
+[submodule "external/nifti"]
+	path = external/nifti
+	url = https://github.com/mcnablab/NIFTI_toolbox.git
+[submodule "external/MOxUnit"]
+	path = external/MOxUnit
+	url = https://github.com/MOxUnit/MOxUnit.git
+[submodule "external/MOcov"]
+	path = external/MOcov
+	url = https://github.com/MOcov/MOcov.git
