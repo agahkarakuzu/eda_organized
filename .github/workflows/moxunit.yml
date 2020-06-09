@@ -17,18 +17,21 @@ jobs:
           GITHUB_WORKSPACE: ${{github.workspace}}
       run: |
         sh downloadTestData.sh
-        cp ${{github.workspace}}/Test/testData/* ${{github.workspace}}/Test
     - uses: agahkarakuzu/moxunit-action@master
       with:
         src: src
         tests: Test
-        data: Test
+        data: Test/testData
         with_coverage: true
         cover_xml_file: coverage.xml
+    - uses: actions/upload-artifact@v1
+      with:
+        name: coverage_file
+        path: coverage.xml
     - uses: codecov/codecov-action@v1
       with:
        token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-       file: ./coverage.xml # optional
+       file:  coverage.xml # optional
        flags: unittests # optional
        name: codecov-umbrella # optional
        fail_ci_if_error: true # optional (default = false)
