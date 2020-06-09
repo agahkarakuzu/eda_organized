@@ -20,7 +20,8 @@ jobs:
         cp ${{github.workspace}}/Test/testData/* ${{github.workspace}}/Test
     - uses: agahkarakuzu/moxunit-action@master
       with:
-        src: src external Test
+        src: src
+        tests: Test
         with_coverage: true
         cover_xml_file: coverage.xml
     - uses: codecov/codecov-action@v1
