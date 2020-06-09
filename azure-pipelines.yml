@@ -1,0 +1,17 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool: 'Default'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'MATLAB CI it is!'
+
+- script: |
+   matlab -nojvm -nodisplay -nosplash -r "initEnv; setenv('PLATFORM','AZURE'); cd('src'); check_my_code; cd('..'); cd('Test'); moxunit_runtests; quit"
+
