@@ -10,6 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Download and extract test data 
+      env:
+          GITHUB_WORKSPACE: ${{github.workspace}}
       run: |
         sh downloadTestData.sh
     - uses: joergbrech/moxunit-action@master
