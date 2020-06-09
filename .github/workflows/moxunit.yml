@@ -1,0 +1,30 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+        fetch-depth: 0
+    - name: Download and extract test data 
+      run: |
+        sh downloadTestData.sh
+    - uses: joergbrech/moxunit-action@master
+      with:
+        with_coverage: true
+        cover_xml_file: coverage.xml
+    - uses: codecov/codecov-action@v1
+      with:
+        file: ./coverage.xml
+    - uses: codecov/codecov-action@v1
+      with:
+        file: ./coverage.xml # optional
+        flags: unittests # optional
+        name: codecov-umbrella # optional
+        fail_ci_if_error: true # optional (default = false)    
