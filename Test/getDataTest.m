@@ -10,10 +10,9 @@ function test_suite=getDataTest
     
     if moxunit_util_platform_is_octave
        initEnv; 
-       help load_untouch_header_only;
     end
     
-    %{
+
     disp('Testing getData =====================');
     [dataLoaded,headerLoaded]  = getData('mtOn.nii','mtOff.nii','testFibers.trk');
     
@@ -29,4 +28,3 @@ function test_suite=getDataTest
         % TODO:
         assertEqual(headerLoaded.fibers,saved.header.fibers);
     end
-    %}
