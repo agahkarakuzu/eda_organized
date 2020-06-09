@@ -20,7 +20,7 @@ function test_suite=idw3dInterpTest
     [interpolatedHeaderNow,interpolatedFibersNow] = idw3dInterp(header.fibers,transformedFibers,header.mtOn,MTR);
     disp('Testing idw3dInterp =====================');
     for iFib = 1:length(interpolatedFibers)
-    disp(['Assertion test fibers at 5% ' num2str(iFib)]);    
+    disp(['Assertion test interpolation fibers at 5% ' num2str(iFib)]);    
     assertElementsAlmostEqual(interpolatedFibers(iFib).matrix,interpolatedFibersNow(iFib).matrix,0.05);
     end
     assertEqual(interpolatedHeader,interpolatedHeaderNow,0.05);

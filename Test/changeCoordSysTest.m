@@ -6,7 +6,7 @@ function test_suite=changeCoordSysTest
     initTestSuite;
     
     function test_coord_change
-    dataDir = [pwd filesep 'testData' filesep];
+    dataDir = [fileparts(which(mfilename())) filesep 'testData' filesep];
     savedD = load([dataDir 'testGetData.mat']);
     savedP = load([dataDir 'testCoordChange.mat']);
     disp('Testing changeCoordSys =====================');
@@ -14,4 +14,4 @@ function test_suite=changeCoordSysTest
     assertEqual(outPoint,savedP.ijk2xyz);
     
     outPoint = changeCoordSys([1 2 3],savedD.header.mtOn,'ijk');
-    assertEqual(outPoint,savedP.xyz2ijk);
+    assertElementsAlmostEqual(outPoint,savedP.xyz2ijk,0.05);

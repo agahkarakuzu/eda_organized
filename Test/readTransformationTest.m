@@ -5,13 +5,11 @@ function test_suite=readTransformationTest
     end
     initTestSuite;
     
+    function test_load_affine
+    dataDir = [fileparts(which(mfilename())) filesep 'testData' filesep];
+    saved = load([dataDir 'testTransform.mat']);
+    disp('Read transformation test at 1% accuracy');
+    affineTransform = readTransformation([dataDir 'transform.txt']);
+    assertElementsAlmostEqual(affineTransform,saved.testTransform,0.01);
     
-    function test_fiber_transform
     
-    dataDir = [pwd filesep 'testData' filesep];
-    load([dataDir 'testGetData.mat']);
-    load([dataDir 'testTransformedFibers.mat']);
-    load([dataDir 'testTransform.mat']);
-    disp('Testing readTransformation =====================');
-    transformedFibersNow = transformFibers(data.fibers,header.mtOn.origin,testTransform);
-    assertEqual(transformedFibersNow,transformedFibers);

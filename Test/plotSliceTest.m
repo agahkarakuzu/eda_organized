@@ -7,7 +7,7 @@ function test_suite=plotSliceTest
     
     function test_plot
    
-    dataDir = [pwd filesep 'testData' filesep];
+    dataDir = [fileparts(which(mfilename())) filesep 'testData' filesep];
     saved = load([dataDir 'testGetData.mat']);
     disp('Testing plotSlice =====================');
     plotSlice(saved.data.mtOn(:,:,20),saved.header.mtOn,20,'hold','off');
