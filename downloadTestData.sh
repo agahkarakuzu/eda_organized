@@ -1,4 +1,4 @@
 dowloadLink=https://osf.io/9ptbr/download?version=2
 echo $dowloadLink
-wget -O Test/testData.zip $dowloadLink 2>/dev/null || curl $dowloadLink --output $PWD/Test/testData.zip -O -J -L
+wget -O $PWD/Test/testData.zip $dowloadLink 2>/dev/null || curl $dowloadLink --output $PWD/Test/testData.zip -O -J -L
 unzip Test/testData.zip -d Test
