@@ -7,7 +7,7 @@ function test_suite=plotSliceTest
     
     function test_plot
    
-    dataDir = ['testData' filesep];
+    dataDir = ['/github/workspace/Test/testData' filesep];
     saved = load([dataDir 'testGetData.mat']);
     disp('Testing plotSlice =====================');
     

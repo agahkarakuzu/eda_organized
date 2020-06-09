@@ -8,7 +8,7 @@ function test_suite=transformFibersTest
     function test_fiber_transform
     
         
-    dataDir = ['testData' filesep];
+    dataDir = ['/github/workspace/Test/testData' filesep];
     load([dataDir 'testGetData.mat']);
     load([dataDir 'testTransformedFibers.mat']);
     load([dataDir 'testTransform.mat']);

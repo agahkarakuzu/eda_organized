@@ -8,7 +8,7 @@ function test_suite=getDataTest
     
     function test_loader
     
-    dataDir = ['testData' filesep];
+    dataDir = ['/github/workspace/Test/testData' filesep];
     disp('Testing getData =====================');
     [dataLoaded,headerLoaded]  = getData([dataDir 'mtOn.nii'],[dataDir 'mtOff.nii'],[dataDir 'testFibers.trk']);
 

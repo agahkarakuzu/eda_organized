@@ -7,7 +7,7 @@ function test_suite=changeCoordSysTest
     
     function test_coord_change
     
-    dataDir = [pwd filesep 'testData' filesep];
+    dataDir = ['/github/workspace/Test/testData' filesep];
     savedD = load([dataDir 'testGetData.mat']);
     savedP = load([dataDir 'testCoordChange.mat']);
     disp('Testing changeCoordSys =====================');
