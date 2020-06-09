@@ -14,16 +14,15 @@ function test_suite=getDataTest
     
 
     disp('Testing getData =====================');
-    %[dataLoaded,headerLoaded]  = getData('testData/mtOn.nii','testData/mtOff.nii','testData/testFibers.trk');
-    headerIn = load_nii_hdr('mtOn.nii');
-    
-    % As this is to check loading, must be identical.
+    [dataLoaded,headerLoaded]  = getData('mtOn.nii','mtOff.nii','testFibers.trk');
+
+
     saved = load('testGetData.mat');
-    %assertEqual(dataLoaded.fibers,saved.data.fibers);
-    %assertEqual(dataLoaded.mtOn,saved.data.mtOn);
-    %assertEqual(dataLoaded.mtOff,saved.data.mtOff);
-    %assertEqual(headerLoaded.mtOn,saved.header.mtOn);
-    %assertEqual(headerLoaded.mtOff,saved.header.mtOff);
+    assertEqual(dataLoaded.fibers,saved.data.fibers);
+    assertEqual(dataLoaded.mtOn,saved.data.mtOn);
+    assertEqual(dataLoaded.mtOff,saved.data.mtOff);
+    assertEqual(headerLoaded.mtOn,saved.header.mtOn);
+    assertEqual(headerLoaded.mtOff,saved.header.mtOff);
     if ~moxunit_util_platform_is_octave
         % Octave complains about this. weird.
         % TODO:

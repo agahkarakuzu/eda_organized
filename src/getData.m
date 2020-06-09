@@ -101,7 +101,7 @@ function [headerOut] = getNiiHeader(niiFile)
 headerOut = struct('origin',zeros(1,3),'spacing',zeros(1,3)); 
 
 % Read only the (original) header.
-headerIn = load_untouch_header_only(niiFile);
+headerIn = load_nii_hdr(niiFile);
 
 % Define anonymous function to read multiple fields of a struct
 getFields = @(S,varargin) cellfun(@(f) S.(f),varargin);

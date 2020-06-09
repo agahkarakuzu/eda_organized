@@ -1,6 +1,6 @@
 
 tic;
-[data,header]  = getData('mtOn.nii','mtOff.nii','CC_Posterior_dwi_space.trk');
+[data,header]  = getData('mtOn.nii','mtOff.nii','CC_50.trk');
 
 affineTransform = readTransformation('transform.txt');
 
@@ -15,7 +15,7 @@ MTR(isinf(MTR)) = 0;
 MTR(isnan(MTR)) = 0;
 MTR(MTR>1) = 1;
 
-[interpolatedHeader,interpolatedFibers] = idw3dInterp_new(header.fibers,transformedFibers,header.mtOn,MTR);
+[interpolatedHeader,interpolatedFibers] = idw3dInterp(header.fibers,transformedFibers,header.mtOn,MTR);
 
 plotSlice(data.mtOn(:,:,30),header.mtOn,30,'hold','on');
 trk_plot(interpolatedHeader,interpolatedFibers,[],[],'scalar',1);
