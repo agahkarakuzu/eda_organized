@@ -6,9 +6,9 @@ function test_suite=changeCoordSysTest
     initTestSuite;
     
     function test_coord_change
-    dataDir = ['testData' filesep];
-    savedD = load([dataDir 'testGetData.mat']);
-    savedP = load([dataDir 'testCoordChange.mat']);
+
+    savedD = load('testGetData.mat');
+    savedP = load('testCoordChange.mat');
     disp('Testing changeCoordSys =====================');
     outPoint = changeCoordSys([1 2 3],savedD.header.mtOn,'xyz');
     assertEqual(outPoint,savedP.ijk2xyz);
