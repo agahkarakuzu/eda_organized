@@ -37,9 +37,9 @@ p = inputParser;
 
 % SET input conditions 
 % Only allow decompressed nifti files
-validNii = @(x) isfile(x) && strcmp(x(end-2:end),'nii');
+validNii = @(x) exist(x,'file') && strcmp(x(end-2:end),'nii');
 % Only allow decompressed trk files
-validTrk = @(x) isfile(x) && strcmp(x(end-2:end),'trk');
+validTrk = @(x) exist(x,'file') && strcmp(x(end-2:end),'trk');
 
 % Add REQUIRED parameters and check for types 
 addRequired(p,'mtOn',validNii);

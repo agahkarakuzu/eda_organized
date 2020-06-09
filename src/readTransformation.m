@@ -7,7 +7,7 @@ function affineTransform = readTransformation(txtFile)
 p = inputParser;
 
 % Input must be a text file 
-isTxtFile = @(x) isfile(x) && strcmp(x(end-2:end),'txt');
+isTxtFile = @(x) exist(x,'file') && strcmp(x(end-2:end),'txt');
 %Add REQUIRED inputs 
 addRequired(p,'txtFile',isTxtFile);
 %PARSE inputs 

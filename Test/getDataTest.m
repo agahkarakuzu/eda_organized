@@ -7,13 +7,12 @@ function test_suite=getDataTest
     
     
     function test_loader
-    %{
+
     disp('Testing getData =====================');
-    dataDir = ['.' filesep 'testData' filesep];
-    [dataLoaded,headerLoaded]  = getData([dataDir 'mtOn.nii'],[dataDir 'mtOff.nii'],[dataDir 'testFibers.trk']);
+    [dataLoaded,headerLoaded]  = getData('mtOn.nii','mtOff.nii','testFibers.trk');
     
     % As this is to check loading, must be identical.
-    saved = load([dataDir 'testGetData.mat']);
+    saved = load('testGetData.mat');
     assertEqual(dataLoaded.fibers,saved.data.fibers);
     assertEqual(dataLoaded.mtOn,saved.data.mtOn);
     assertEqual(dataLoaded.mtOff,saved.data.mtOff);
@@ -24,4 +23,3 @@ function test_suite=getDataTest
         % TODO:
         assertEqual(headerLoaded.fibers,saved.header.fibers);
     end
-    %}
