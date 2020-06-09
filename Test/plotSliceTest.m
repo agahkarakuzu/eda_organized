@@ -7,7 +7,7 @@ function test_suite=plotSliceTest
     
     function test_plot
    
-    saved = load([dataDir 'testGetData.mat']);
+    saved = load('testGetData.mat');
     disp('Testing plotSlice =====================');
     
     if moxunit_util_platform_is_octave

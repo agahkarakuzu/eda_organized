@@ -7,7 +7,11 @@ function test_suite=getDataTest
     
     
     function test_loader
-
+    
+    if ~moxunit_util_platform_is_octave
+       initEnv; 
+    end
+    
     disp('Testing getData =====================');
     [dataLoaded,headerLoaded]  = getData('mtOn.nii','mtOff.nii','testFibers.trk');
     
