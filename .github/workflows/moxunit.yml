@@ -20,7 +20,6 @@ jobs:
     - uses: agahkarakuzu/moxunit-action@master
       with:
         src: src
-        tests: Test
         data: Test/testData
         with_coverage: true
         cover_xml_file: coverage.xml
