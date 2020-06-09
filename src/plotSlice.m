@@ -27,15 +27,18 @@ parse(p,slice,header,sliceNo,varargin{:});
 %  =========================================== IJK --> XYZ TRANSFORM
 
 % Initialize output matrices 
-plot = struct('X',zeros(header.size(1),header.size(2)), ...
-              'Y',zeros(header.size(1),header.size(2)), ...
-              'Z',zeros(header.size(1),header.size(2)));
+% Initialize by input slice size in case data is partially sent
+slice = squeeze(slice);
+sliceSize = size(slice);
+plot = struct('X',zeros(sliceSize(1),sliceSize(2)), ...
+              'Y',zeros(sliceSize(1),sliceSize(2)), ...
+              'Z',zeros(sliceSize(1),sliceSize(2)));
 
 % Iterate over indexes to convert every point in ijk domain to
 % world coordinates (xyz)
 
-for iX=1:header.size(1)
-    for jY=1:header.size(2)
+for iX=1:sliceSize
+    for jY=1:sliceSize
         
         outPoint = changeCoordSys([iX jY sliceNo],header,'xyz');
         plot.X(iX,jY) = outPoint(1);
