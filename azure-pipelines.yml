@@ -9,9 +9,9 @@ trigger:
 pool: 'Default'
 
 steps:
+- checkout: self
+  submodules: true
 - script: echo Hello, world!
   displayName: 'MATLAB CI it is!'
-
-- script: |
-   matlab -nojvm -nodisplay -nosplash -r "initEnv; setenv('PLATFORM','AZURE'); cd('src'); check_my_code; cd('..'); cd('Test'); moxunit_runtests; quit"
-
+- script: matlab -nojvm -nodisplay -nosplash -r "initEnv; setenv('PLATFORM','AZURE'); cd('src'); check_my_code; cd('..'); cd('Test'); moxunit_runtests; quit"
+  dislayName: MATLAB test
