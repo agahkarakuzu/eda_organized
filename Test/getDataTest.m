@@ -14,7 +14,7 @@ function test_suite=getDataTest
     
 
     disp('Testing getData =====================');
-    [dataLoaded,headerLoaded]  = getData('mtOn.nii','mtOff.nii','testFibers.trk');
+    [dataLoaded,headerLoaded]  = getData('testData/mtOn.nii','testData/mtOff.nii','testData/testFibers.trk');
     
     % As this is to check loading, must be identical.
     saved = load('testGetData.mat');
