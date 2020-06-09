@@ -2,7 +2,7 @@ function dataDir = getTestDataDir
 
 PLATFORM  = getenv('PLATFORM');
 
-if strcmp(PLATFORM,'GITHUB')
+if strcmp(PLATFORM,'GITHUB_ACTIONS')
     
     dataDir = '/github/workspace/Test/testData';
 
