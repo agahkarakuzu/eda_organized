@@ -20,8 +20,3 @@ function test_suite=getDataTest
     assertEqual(dataLoaded.mtOff,saved.data.mtOff);
     assertEqual(headerLoaded.mtOn,saved.header.mtOn);
     assertEqual(headerLoaded.mtOff,saved.header.mtOff);
-    if ~moxunit_util_platform_is_octave
-        % Octave complains about this. weird.
-        % TODO:
-        assertEqual(headerLoaded.fibers,saved.header.fibers);
-    end
