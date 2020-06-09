@@ -17,11 +17,11 @@ jobs:
           GITHUB_WORKSPACE: ${{github.workspace}}
       run: |
         sh downloadTestData.sh
-        mv ${{github.workspace}}/Test/testData/* ${{github.workspace}}/Test
+        mkdir ${{github.workspace}}/data
+        cp ${{github.workspace}}/Test/testData/* ${{github.workspace}}/data
     - uses: joergbrech/moxunit-action@master
       with:
-        src: src external
-        tests: Test
+        src: src external data
         with_coverage: true
         cover_xml_file: coverage.xml
     - uses: codecov/codecov-action@v1
