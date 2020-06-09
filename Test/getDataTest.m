@@ -12,12 +12,12 @@ function test_suite=getDataTest
        initEnv; 
     end
     
-
+    dataDir = ['testData' filesep];
     disp('Testing getData =====================');
-    [dataLoaded,headerLoaded]  = getData('mtOn.nii','mtOff.nii','testFibers.trk');
+    [dataLoaded,headerLoaded]  = getData([dataDir 'mtOn.nii'],[dataDir 'mtOff.nii'],[dataDir 'testFibers.trk']);
 
 
-    saved = load('testGetData.mat');
+    saved = load([dataDir 'testGetData.mat']);
     assertEqual(dataLoaded.fibers,saved.data.fibers);
     assertEqual(dataLoaded.mtOn,saved.data.mtOn);
     assertEqual(dataLoaded.mtOff,saved.data.mtOff);

@@ -7,7 +7,8 @@ function test_suite=transformFibersTest
     
     function test_fiber_transform
     
-    dataDir = [fileparts(which(mfilename())) filesep 'testData' filesep];
+        
+    dataDir = ['testData' filesep];
     load([dataDir 'testGetData.mat']);
     load([dataDir 'testTransformedFibers.mat']);
     load([dataDir 'testTransform.mat']);

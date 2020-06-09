@@ -8,6 +8,7 @@ function test_suite=idw3dInterpTest
     function interp_test
         
     dataDir = ['testData' filesep];
+    
     load([dataDir 'testGetData.mat']);
     load([dataDir 'testTransformedFibers.mat']);
     load([dataDir 'testInterpolated.mat']);

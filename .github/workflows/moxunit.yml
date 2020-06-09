@@ -21,6 +21,7 @@ jobs:
       with:
         src: src
         data: Test/testData
+        pkg: image io
         with_coverage: true
         cover_xml_file: coverage.xml
     - uses: actions/upload-artifact@v1

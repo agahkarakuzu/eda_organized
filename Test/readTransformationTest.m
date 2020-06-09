@@ -6,6 +6,7 @@ function test_suite=readTransformationTest
     initTestSuite;
     
     function test_load_affine
+        
     dataDir = ['testData' filesep];
     saved = load([dataDir 'testTransform.mat']);
     disp('Read transformation test at 1% accuracy');
