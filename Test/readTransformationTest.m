@@ -9,7 +9,7 @@ function test_suite=readTransformationTest
     dataDir = ['testData' filesep];
     saved = load([dataDir 'testTransform.mat']);
     disp('Read transformation test at 1% accuracy');
-    affineTransform = readTransformation([dataDir 'transform.txt']);
+    affineTransform = readTransformation('transform.txt');
     assertElementsAlmostEqual(affineTransform,saved.testTransform,0.01);
     
     
