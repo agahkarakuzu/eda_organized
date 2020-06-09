@@ -13,7 +13,7 @@ function test_suite=getDataTest
        help load_untouch_header_only;
     end
     
-    {%
+    %{
     disp('Testing getData =====================');
     [dataLoaded,headerLoaded]  = getData('mtOn.nii','mtOff.nii','testFibers.trk');
     
