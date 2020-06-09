@@ -19,7 +19,7 @@ jobs:
         sh downloadTestData.sh
     - uses: joergbrech/moxunit-action@master
       with:
-        src: src external Test/testData
+        src: src external
         tests: Test
         with_coverage: true
         cover_xml_file: coverage.xml

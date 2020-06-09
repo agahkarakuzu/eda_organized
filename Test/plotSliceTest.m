@@ -10,5 +10,10 @@ function test_suite=plotSliceTest
     dataDir = [fileparts(which(mfilename())) filesep 'testData' filesep];
     saved = load([dataDir 'testGetData.mat']);
     disp('Testing plotSlice =====================');
+    
+    if moxunit_util_platform_is_octave
+       pkg('load','image');
+    end
+    
     plotSlice(saved.data.mtOn(:,:,20),saved.header.mtOn,20,'hold','off');
     close all;
