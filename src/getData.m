@@ -7,7 +7,6 @@
 %    input1 - Description
 %    input2 - Description
 %    input3 - Description
-%
 % Outputs:
 %    output1 - Description
 %    output2 - Description
