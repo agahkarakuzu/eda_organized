@@ -4,3 +4,6 @@
 [submodule "external/trk_tools"]
 	path = external/trk_tools
 	url = https://github.com/johncolby/along-tract-stats.git
+[submodule "external/MOnifti"]
+	path = external/MOnifti
+	url = https://github.com/agahkarakuzu/MOnifti.git
