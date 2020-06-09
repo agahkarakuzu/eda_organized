@@ -17,7 +17,7 @@ function initEnv
 if isOctave
 
 % Exit if min version is not satisfied
-if ~compare_versions(OCTAVE_VERSION,'3.6.0','>=')
+if ~compare_versions(OCTAVE_VERSION,'4.0.3','>=')
 	error('Minimum required Octave version: 3.6.0');
 end
 
