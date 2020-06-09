@@ -25,10 +25,6 @@ jobs:
         ext: external
         with_coverage: true
         cover_xml_file: coverage.xml
-    - uses: actions/upload-artifact@v1
-      with:
-        name: coverage_file
-        path: coverage.xml
     - uses: codecov/codecov-action@v1
       with:
        token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
