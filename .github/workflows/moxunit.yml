@@ -17,7 +17,8 @@ jobs:
           GITHUB_WORKSPACE: ${{github.workspace}}
       run: |
         sh downloadTestData.sh
-        cp -R ${{github.workspace}}/Test/testData /github/workspace/Test/testData
+        mkdir /github/workspace/Test/testData
+        cp ${{github.workspace}}/Test/testData/* /github/workspace/Test/testData
         ls /github/workspace/Test/testData
     - uses: joergbrech/moxunit-action@master
       with:
