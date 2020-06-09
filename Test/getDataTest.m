@@ -8,10 +8,6 @@ function test_suite=getDataTest
     
     function test_loader
     
-    if moxunit_util_platform_is_octave
-       initEnv; 
-    end
-    
     dataDir = ['testData' filesep];
     disp('Testing getData =====================');
     [dataLoaded,headerLoaded]  = getData([dataDir 'mtOn.nii'],[dataDir 'mtOff.nii'],[dataDir 'testFibers.trk']);
