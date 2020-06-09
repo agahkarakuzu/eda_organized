@@ -12,7 +12,7 @@ function test_suite=changeCoordSysTest
     savedD = load([dataDir 'testGetData.mat']);
     savedP = load([dataDir 'testCoordChange.mat']);
     disp('Testing changeCoordSys =====================');
-    outPoint = changeCoordSys([1 2 3],savedD.header.mtOn,'xyz');x
+    outPoint = changeCoordSys([1 2 3],savedD.header.mtOn,'xyz');
     assertEqual(outPoint,savedP.ijk2xyz);
     
     outPoint = changeCoordSys([1 2 3],savedD.header.mtOn,'ijk');
