@@ -12,7 +12,6 @@ jobs:
       with:
         submodules: true
         fetch-depth: 1
-        recursive: true  
     - name: Download and extract test data 
       env:
           GITHUB_WORKSPACE: ${{github.workspace}}
