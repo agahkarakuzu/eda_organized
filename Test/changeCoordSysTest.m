@@ -6,7 +6,7 @@ function test_suite=changeCoordSysTest
     initTestSuite;
     
     function test_coord_change
-    dataDir = [fileparts(which(mfilename())) filesep 'testData' filesep];
+    dataDir = ['testData' filesep];
     savedD = load([dataDir 'testGetData.mat']);
     savedP = load([dataDir 'testCoordChange.mat']);
     disp('Testing changeCoordSys =====================');
