@@ -7,11 +7,12 @@ function test_suite=changeCoordSysTest
     
     function test_coord_change
     
-    dataDir = ['/github/workspace/Test/testData' filesep];
+    dataDir = [getTestDataDir filesep];
+    
     savedD = load([dataDir 'testGetData.mat']);
     savedP = load([dataDir 'testCoordChange.mat']);
     disp('Testing changeCoordSys =====================');
-    outPoint = changeCoordSys([1 2 3],savedD.header.mtOn,'xyz');
+    outPoint = changeCoordSys([1 2 3],savedD.header.mtOn,'xyz');x
     assertEqual(outPoint,savedP.ijk2xyz);
     
     outPoint = changeCoordSys([1 2 3],savedD.header.mtOn,'ijk');

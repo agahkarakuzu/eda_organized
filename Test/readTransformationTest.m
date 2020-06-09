@@ -7,7 +7,8 @@ function test_suite=readTransformationTest
     
     function test_load_affine
         
-    dataDir = ['/github/workspace/Test/testData' filesep];
+    dataDir = [getTestDataDir filesep];
+    
     saved = load([dataDir 'testTransform.mat']);
     disp('Read transformation test at 1% accuracy');
     affineTransform = readTransformation('transform.txt');
