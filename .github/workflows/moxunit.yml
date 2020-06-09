@@ -17,6 +17,8 @@ jobs:
         sh downloadTestData.sh
     - uses: joergbrech/moxunit-action@master
       with:
+        src: src external
+        tests: Test
         with_coverage: true
         cover_xml_file: coverage.xml
     - uses: codecov/codecov-action@v1
