@@ -1,6 +1,3 @@
-[submodule "external/nifti"]
-	path = external/nifti
-	url = https://github.com/mcnablab/NIFTI_toolbox.git
 [submodule "external/check_my_code"]
 	path = external/check_my_code
 	url = https://github.com/Remi-Gau/check_my_code.git
