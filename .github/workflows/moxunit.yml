@@ -17,9 +17,12 @@ jobs:
           GITHUB_WORKSPACE: ${{github.workspace}}
       run: |
         sh downloadTestData.sh
+        cp ${{github.workspace}}/Test/testData/* ${{github.workspace}}/Test
+        echo Test icerisi 
+        ls ${{github.workspace}}/Test
     - uses: joergbrech/moxunit-action@master
       with:
-        src: src external Test/testData
+        src: src external Test
         tests: Test
         with_coverage: true
         cover_xml_file: coverage.xml
