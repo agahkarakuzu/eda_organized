@@ -11,7 +11,7 @@ function test_suite=plotSliceTest
     saved = load([dataDir 'testGetData.mat']);
     disp('Testing plotSlice =====================');
     
-    plotSlice(saved.data.mtOn(:,:,20),saved.header.mtOn,20,'hold','off');
+    plotSlice(saved.data.mtOn(1:10,1:10,20),saved.header.mtOn,20,'hold','off');
     FigList = findobj(allchild(0), 'flat', 'Type', 'figure');
     disp(FigList);
     close all;
