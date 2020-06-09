@@ -48,7 +48,7 @@ end
 
 figure();
 % 3D plot in world coordinates colored by intensity values
-surf(plot.X,plot.Y,plot.Z,mat2gray(slice));
+surf(plot.X,plot.Y,plot.Z,mat2gray(squeeze(slice)));
 % Add figure title showing field name and slice number. 
 title(sprintf([header.name ' Slice: %d'],sliceNo));
 
