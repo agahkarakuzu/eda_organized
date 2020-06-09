@@ -18,7 +18,7 @@ jobs:
       run: |
         sh downloadTestData.sh
         cp ${{github.workspace}}/Test/testData/* ${{github.workspace}}/Test
-    - uses: joergbrech/moxunit-action@master
+    - uses: agahkarakuzu/moxunit-action@master
       with:
         src: src external Test
         tests: Test
