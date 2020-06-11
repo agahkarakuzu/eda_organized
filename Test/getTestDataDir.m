@@ -17,7 +17,7 @@ elseif strcmp(PLATFORM,'AZURE')  % MATLAB
     
 elseif isempty(PLATFORM)  % local 
     
-    dataDir = '/testData';
+    dataDir = [pwd '/testData'];
     
 end
 
