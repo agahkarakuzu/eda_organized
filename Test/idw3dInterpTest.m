@@ -14,10 +14,8 @@ function test_suite=idw3dInterpTest
     load([dataDir 'testTransformedFibers.mat']);
     load([dataDir 'testInterpolated.mat']);
     
-    MTR = abs(data.mtOn - data.mtOff)./data.mtOff;
-    MTR(isinf(MTR)) = 0;
-    MTR(isnan(MTR)) = 0;
-    MTR(MTR>1) = 1;
+    disp('Calculating MTR ================')
+    MTR = getMtr(data.mtOn,data.mtOff);
     
     [interpolatedHeaderNow,interpolatedFibersNow] = idw3dInterp(header.fibers,transformedFibers,header.mtOn,MTR);
     disp('Testing idw3dInterp =====================');

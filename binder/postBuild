@@ -1,4 +1,3 @@
 wget -O $HOME/work/Eda_Data.zip https://osf.io/w572v/download
 unzip $HOME/work/Eda_Data.zip -d $HOME/work
-wget -O $HOME/work/testData.zip https://osf.io/9ptbr/download?version=4
-unzip $HOME/work/testData.zip -d $HOME/work
+wget -O $HOME/work/testData.zip https://osf.io/9ptbr/download?version=5 && unzip $HOME/work/testData.zip -d $HOME/work

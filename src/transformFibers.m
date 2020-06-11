@@ -42,34 +42,34 @@ transform(1:3,1:3) = eye(3);
 % difference will become more noticeable as the array size becomes larger. 
 
 % ============================================================ BEFORE REFACTORING 
-%{
-transformedFibers = fibers; % Pre-allocation
-tic;
-for ii=1:length(fibers)
-    for jj = 1:length(fibers(ii).matrix)
-        transformedFibers(ii).matrix(jj,:) = fibers(ii).matrix(jj,:)*transform(1:3,1:3) + origin - transform(1:3,4)';
-    end
-end
-toc;
-%} 
+
+%transformedFibers = fibers; % Pre-allocation
+%tic;
+%for ii=1:length(fibers)
+%    for jj = 1:length(fibers(ii).matrix)
+%        transformedFibers(ii).matrix(jj,:) = fibers(ii).matrix(jj,:)*transform(1:3,1:3) + origin - transform(1:3,4)';
+%    end
+%end
+%toc;
+ 
 
 % (2) Vectorization 
 % -----------------
 % Vectorized operatoins take advantage of low-level optimized routines 
 % (stuff in Intel's Math Kernel Library), hence runs much faster than 
 % for loops. For example: 
-%{ 
-    i = 0;
-    for t = 0:.01:10
-        i = i + 1;
-        y(i) = sin(t);
-    end
-%}
+ 
+%    i = 0;
+%    for t = 0:.01:10
+%        i = i + 1;
+%        y(i) = sin(t);
+%    end
+
 % would run much faster if you did 
-%{
-    t = 0:.01:10;
-    y = sin(t);
-%}
+
+%    t = 0:.01:10;
+%    y = sin(t);
+
 
 % (3) Implicit expansion (previously available as bsxfun)
 % -------------------------------------------------------
@@ -85,12 +85,12 @@ toc;
 % How did that happen? MATLAB somehow understood how to "expand" a 1X3 vector
 % to add it with a 3X3 matrix. This is called "implicit expansion", which is 
 % known to work faster than explicit for loops, i.e.: 
-%{
-        c = zeros(size(a)); % Pre-allocate :) 
-        for iRow = 1:3
-            c(iRow,:) = a(iRow,:) + b
-        end
-%}
+
+%        c = zeros(size(a)); % Pre-allocate :) 
+%        for iRow = 1:3
+%            c(iRow,:) = a(iRow,:) + b
+%        end
+
 % This small example may not be the best way to explore performance improvement,
 % but this is a feature that everyone writing code in MATLAB should be aware of. 
 % Octave equivalent of implicit expansion is broadcasting, available in versions
@@ -98,10 +98,10 @@ toc;
 %
 % Previously implicit expansion was accessible through a function called bsxfun.
 % If we were to apply bsxfun to the same example, we would call: 
-%{
-       c = zeros(size(a)); % Pre-allocate :) 
-       c = bsxfun(@plus,a,b);
-%}
+
+%       c = zeros(size(a)); % Pre-allocate :) 
+%       c = bsxfun(@plus,a,b);
+
 
 % (4) FUN operations
 % -----------------

@@ -1,6 +1,6 @@
 
 tic;
-[data,header]  = getData('mtOn.nii','mtOff.nii','CC_50.trk');
+[data,header]  = getData('mtOn.nii','mtOff.nii','CC_500.trk');
 
 affineTransform = readTransformation('transform.txt');
 
