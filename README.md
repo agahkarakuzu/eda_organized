@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/agahkarakuzu/eda_organized/master) [![](http://img.shields.io/badge/Zenodo-Presentation-orange?style=flat&logo=microsoft%20powerpoint)](https://zenodo.org/record/3891498#.XuOHY2pKg1I) [![](http://img.shields.io/badge/OSF-Data%20repository-blue?style=flat)](https://zenodo.org/record/3891498#.XuOHY2pKg1I) 
 
-<img src="https://mfr.osf.io/export?url=https://osf.io/69jyx/?direct%26mode=render%26action=download%26public_file=True&initialWidth=684&childId=mfrIframe&parentTitle=OSF+%7C+banner.png&parentUrl=https://osf.io/69jyx/&format=1200x1200.jpeg" style="width:900px;"></img>
+<img src="banner.png" style="width:900px;"></img>
 
 <center> <h1> ⚠️ </h1> <center>
 <center> <h3 style="color:purple;"> Scripts in this repository are NOT intended for research use! </h3></center>
