@@ -195,7 +195,7 @@ and make a pull request. Improvement can be anything, even fixing a typo!
 
 If you fork this repository, open the `Actions` tab and click that green button
 to enable `CI` running for your fork! This way, you can ensure that your changes 
-will not break something and make your PR with mind at peace 😌. 
+will not break something and help you make a PR with mind at peace 😌. 
 
 Other exercises will ask you to work with [Aurina's repository](https://github.com/AurinaBMH/OHBMpractical). Thank you @AurinaBMH! 
 
@@ -209,8 +209,8 @@ Other exercises will ask you to work with [Aurina's repository](https://github.c
 
 <details><summary> <b> 💚 Add comments to the <a src="https://github.com/agahkarakuzu/eda_organized/tree/master/src">functions</a> in this repo </b> </font> </summary>
 
-On purpose, I did not add any header comments to the functions I wrote for this 
-course. 
+I did not add any header comments to the functions I wrote for this 
+course on purpose. 
 1. Fork this repository 
 2. Create a header comment for one of the functions you choose and make a
 pull request to this repository!
