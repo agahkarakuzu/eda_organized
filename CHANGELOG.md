@@ -1,6 +1,21 @@
+## Release v[1.0] - 2020-06-16
 
+### New ✨
+- 🆕 Refactored Jim's code
+- 🆕 Wrote tests
+- 🆕 Added CI in Octave and MATLAB
+- 🆕 Test coverage
+- 🆕 Binder 
+- 🆕 Build and push Docker images at each release
 
+### Improvements 🚀
+- First release. 
 
+### Bug Fixes🐛
+- Hope someone will find some 
+
+### Removed 🧹
+- Jim's code :) 
 
 ## Release [major.minor.patch] - YYYY-MM-DD (TEMPLATE)
 
