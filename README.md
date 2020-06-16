@@ -195,7 +195,7 @@ and make a pull request. Improvement can be anything, even fixing a typo!
 
 If you fork this repository, open the `Actions` tab and click that green button
 to enable `CI` running for your fork! This way, you can ensure that your changes 
-will not break something and help you make a PR with mind at peace 😌. 
+will not break something, and make your PR with mind at peace 😌. 
 
 Other exercises will ask you to work with [Aurina's repository](https://github.com/AurinaBMH/OHBMpractical). Thank you @AurinaBMH! 
 
@@ -211,6 +211,7 @@ Other exercises will ask you to work with [Aurina's repository](https://github.c
 
 I did not add any header comments to the functions I wrote for this 
 course on purpose. 
+
 1. Fork this repository 
 2. Create a header comment for one of the functions you choose and make a
 pull request to this repository!
@@ -219,7 +220,7 @@ By the way, it does not have to be a header comment! You can make a pull request
 for anything that improves readibility of the code, such as adding inline 
 comments, changing variable names, or even fixing a typo. 
 
-Hint: You can find a header comment template in [`getData.m](https://github.com/agahkarakuzu/eda_organized/blob/master/src/getData.m).
+Hint: You can find a header comment template in <a src="https://github.com/agahkarakuzu/eda_organized/blob/master/src/getData.m"><code>getData.m</code></a>.
 
 </details>
 
