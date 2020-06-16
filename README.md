@@ -397,4 +397,11 @@ Your challenge is to tag Docker images without reading the info from <code>versi
 
 ![](https://qmrlab.org/assets/images/p13-1.jpeg)
 
-## I wrote a [blog post](https://qmrlab.org/2020/06/16/matlab-ci.html) for you! 
+### Take me down to the open-source city where the code is clean and the runtime is free!
+
+Making your MATLAB code Octave compatible is always a good idea. Yet, sometimes it is not easily possible. As you are making your code Octave compatible, you may sacrifice some features (e.g. GUI) or performance. How do we get the best of both MATLAB and Octave? 
+
+Don’t worry, you won’t have to sell your soul to the devil to do it :) All it takes is to set up an Azure self-hosted agent.
+
+### Good news: I wrote a [blog post](https://qmrlab.org/2020/06/16/matlab-ci.html) to explain how to do that! 
+
