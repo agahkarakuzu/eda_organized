@@ -197,12 +197,15 @@ If you fork this repository, open the `Actions` tab and click that green button
 to enable `CI` running for your fork! This way, you can ensure that your changes 
 will not break something and make your PR with mind at peace 😌. 
 
-Difficulty levels: 
-- 💚 Easy
-- 💛 Medium
-- 🧡 Upper-intermediate
-- ❤️ A bit difficult (relatively)
-- 😎 PRO
+Other excercises will ask you to work with [Aurina's repository](https://github.com/AurinaBMH/OHBMpractical). Thank you @AurinaBMH! 
+
+| Icon | Difficulty level |
+|:------|:----|
+|💚| Easy|
+|💛| Medium|
+|🧡| Upper-intermediate|
+|❤️ |A bit difficult (relatively)|
+|😎 |PRO|
 
 <details><summary> <b> 💚 Add comments to the <a src="https://github.com/agahkarakuzu/eda_organized/tree/master/src">functions</a> in this repo </b> </font> </summary>
 
@@ -220,7 +223,7 @@ Hint: You can find a header comment template in [`getData.m](https://github.com/
 
 </details>
 
-<details><summary> <b> 💚 Improve community profile of this repo <a src="https://github.com/agahkarakuzu/eda_organized/tree/master/src">functions</a> in this repo </b> </font> </summary>
+<details><summary> <b> 💚 Improve community profile of this repo </b> </font> </summary>
 
 
 This repository is missing some important <a src="https://help.github.com/en/github/building-a-strong-community/about-community-profiles-for-public-repositories">community profile</a> information.
@@ -241,7 +244,7 @@ Fork this repository, do your changes and make a PR!
 
 </details>
 
-<details><summary> <b> 🧡 Improve performance in this repo</b> </font> </summary>
+<details><summary> <b> 🧡 Do performance improvements in this repo</b> </font> </summary>
 
 Remember that the `plotSlice` function was running slowly for no reason? See the
 instructions [here](https://github.com/agahkarakuzu/eda_organized/blob/20184bfaa2db2be4088b38f239623881b45a0e85/src/plotSlice.m#L40-L63) and try to replace
@@ -334,7 +337,7 @@ you completed the previous exercise and have your tests ready in the <code>Test<
 
 </details>
 
-<details><summary> <b> ❤️ Set up Docker actions <a src="https://github.com/AurinaBMH/OHBMpractical">Auirina's repository</a> </b> </font> </summary>
+<details><summary> <b> ❤️ Set up Docker actions for <a src="https://github.com/AurinaBMH/OHBMpractical"><u>Auirina's repository</u></a> </b> </font> </summary>
 
 This repository builds and pushes its own Docker images to DockerHub each time 
 I release it. To do this for Aurina's repo:
@@ -390,8 +393,8 @@ Your challenge is to tag Docker images without reading the info from <code>versi
 </details>
 
 
-## 🚀 How to set up your own MATLAB CI server? 
+# 🚀 How to set up your own MATLAB CI server? 
 
 ![](https://qmrlab.org/assets/images/p13-1.jpeg)
 
-I wrote a [blog post](https://qmrlab.org/2020/06/16/matlab-ci.html) for you! 
+## I wrote a [blog post](https://qmrlab.org/2020/06/16/matlab-ci.html) for you! 
