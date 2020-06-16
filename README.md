@@ -188,16 +188,16 @@ I splitted my video (beginning from 23:00) into 12 parts by content. You can  fi
 12. [Running the notebook! Bonus: Interactive plots](https://www.loom.com/share/c4bfe285b1454b148d4d7317e2a818d4)
 </details>
 
-## ⌨️ Excercises  
+## ⌨️ Exercises  
 
-Many of the excercises below will encourage you to fork this repository, improve it 
+Some of the exercises below will encourage you to fork this repository, improve it 
 and make a pull request. Improvement can be anything, even fixing a typo! 
 
 If you fork this repository, open the `Actions` tab and click that green button
 to enable `CI` running for your fork! This way, you can ensure that your changes 
 will not break something and make your PR with mind at peace 😌. 
 
-Other excercises will ask you to work with [Aurina's repository](https://github.com/AurinaBMH/OHBMpractical). Thank you @AurinaBMH! 
+Other exercises will ask you to work with [Aurina's repository](https://github.com/AurinaBMH/OHBMpractical). Thank you @AurinaBMH! 
 
 | Icon | Difficulty level |
 |:------|:----|
@@ -404,4 +404,3 @@ Making your MATLAB code Octave compatible is always a good idea. Yet, sometimes 
 Don’t worry, you won’t have to sell your soul to the devil to do it :) All it takes is to set up an Azure self-hosted agent.
 
 ### Good news: I wrote a [blog post](https://qmrlab.org/2020/06/16/matlab-ci.html) to explain how to do that! 
-
