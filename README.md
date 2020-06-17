@@ -25,7 +25,7 @@ You need to pass `--recursive` argument as the repo contains submodules in the
 
 ## 📥 Installation instructions 
 
-<details><summary> <b>💻 Install locally</b> </font> </summary>
+<details><summary> <b>💻 Install locally</b> </font> </summary><br>
 
 ### MATLAB
 
@@ -107,7 +107,7 @@ Please follow the instructions on [Octave's official wiki page](https://wiki.oct
 
 </details>
 
-<details><summary> <b>🐳 Use with Docker</b> </font> </summary>
+<details><summary> <b>🐳 Use with Docker</b> </font> </summary><br>
 
 If you have Docker installed on your computer and running, you can run the code 
 in the same environment described in this repository. 
@@ -161,7 +161,7 @@ docker run -it --rm -p 8888:8888 agahkarakuzu/brainhack20:latest
 
 </details>
 
-<details><summary> <b>☁️ Execute online</b> </font> </summary>
+<details><summary> <b>☁️ Execute online</b> </font> </summary><br>
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/agahkarakuzu/eda_organized/master)
 
@@ -224,7 +224,7 @@ Hint: You can find a header comment template in <a src="https://github.com/agahk
 
 </details>
 
-<details><summary> <b> 💚 Improve community profile of this repo </b> </font> </summary>
+<details><summary> <b> 💚 Improve community profile of this repo </b> </font> </summary><br>
 
 
 This repository is missing some important <a src="https://help.github.com/en/github/building-a-strong-community/about-community-profiles-for-public-repositories">community profile</a> information.
@@ -235,7 +235,7 @@ I just created a nice <a src="https://github.com/agahkarakuzu/eda_organized/blob
 
 </details>
 
-<details><summary> <b> 💛 Improve <a src="https://github.com/agahkarakuzu/eda_organized/tree/master/Test">tests in this repo</a> </b> </font> </summary>
+<details><summary> <b> 💛 Improve <a src="https://github.com/agahkarakuzu/eda_organized/tree/master/Test">tests in this repo</a> </b> </font> </summary><br>
 
 
 Improvements can include adding comments to the [test scripts](https://github.com/agahkarakuzu/eda_organized/tree/master/Test), improving testing steps or even writing a new 
@@ -245,7 +245,7 @@ Fork this repository, do your changes and make a PR!
 
 </details>
 
-<details><summary> <b> 🧡 Do performance improvements in this repo</b> </font> </summary>
+<details><summary> <b> 🧡 Do performance improvements in this repo</b> </font> </summary><br>
 
 Remember that the `plotSlice` function was running slowly for no reason? See the
 instructions [here](https://github.com/agahkarakuzu/eda_organized/blob/20184bfaa2db2be4088b38f239623881b45a0e85/src/plotSlice.m#L40-L63) and try to replace
@@ -259,7 +259,7 @@ Do not forget to make a pull request once you complete it!
 
 </details>
 
-<details><summary> <b> 💛 Write tests for <a src="https://github.com/AurinaBMH/OHBMpractical">Auirina's repository</a> </b> </font> </summary>
+<details><summary> <b> 💛 Write tests for <a src="https://github.com/AurinaBMH/OHBMpractical">Auirina's repository</a> </b> </font> </summary><br>
 
 1. Clone @AurinaBMH's repository <br>
 <code> git clone https://github.com/AurinaBMH/OHBMpractical.git </code>
@@ -281,7 +281,7 @@ function. See if your tests passes!
 
 </details>
 
-<details><summary> <b> 🧡 Set up CI for <a src="https://github.com/AurinaBMH/OHBMpractical">Auirina's repository</a> </b> </font> </summary>
+<details><summary> <b> 🧡 Set up CI for <a src="https://github.com/AurinaBMH/OHBMpractical">Auirina's repository</a> </b> </font> </summary><br>
 
 1. It does not make much sense to set up a CI without tests right? Make sure that 
 you completed the previous exercise and have your tests ready in the <code>Test</code> folder. 
@@ -308,7 +308,7 @@ you completed the previous exercise and have your tests ready in the <code>Test<
 
 </details>
 
-<details><summary> <b> 🧡 Create a notebook for <a src="https://github.com/AurinaBMH/OHBMpractical">Auirina's repository</a> and Binderize it </b> </font> </summary>
+<details><summary> <b> 🧡 Create a notebook for <a src="https://github.com/AurinaBMH/OHBMpractical">Auirina's repository</a> and Binderize it </b> </font> </summary><br>
 
 1. To work with it Aurina's repo just like any other github repo you have you can either:
     - Create a new repository in your GitHub and copy <code>YOUR_NEW_REPO_URL</code>
@@ -338,7 +338,7 @@ you completed the previous exercise and have your tests ready in the <code>Test<
 
 </details>
 
-<details><summary> <b> ❤️ Set up Docker actions for <a src="https://github.com/AurinaBMH/OHBMpractical"><u>Auirina's repository</u></a> </b> </font> </summary>
+<details><summary> <b> ❤️ Set up Docker actions for <a src="https://github.com/AurinaBMH/OHBMpractical"><u>Auirina's repository</u></a> </b> </font> </summary><br>
 
 This repository builds and pushes its own Docker images to DockerHub each time 
 I release it. To do this for Aurina's repo:
@@ -384,7 +384,7 @@ I release it. To do this for Aurina's repo:
 
 </details>
 
-<details><summary> <b> 😎 Tag Docker images you build for <a src="https://github.com/AurinaBMH/OHBMpractical">Auirina's repository</a> using information from GitHub actions </b> </font> </summary>
+<details><summary> <b> 😎 Tag Docker images you build for <a src="https://github.com/AurinaBMH/OHBMpractical">Auirina's repository</a> using information from GitHub actions </b> </font> </summary><br>
 
 You need to complete the previous exercise first. There, we use <code>version.txt</code>
 to tag Docker images we build and push. 
