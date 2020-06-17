@@ -143,7 +143,7 @@ To re-use your container built by repo2docker, do the following:
 docker run -it --rm -p 8888:8888 `PASTE IMAGE ID HERE` jupyter notebook --ip 0.0.0.0
 ```
 
-### Use Docker
+### Option 2: Use Docker image built by this repo
 
 This repository builds and pushes its own Docker images on every release! 
 
