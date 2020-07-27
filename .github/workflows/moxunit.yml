@@ -17,7 +17,7 @@ jobs:
           GITHUB_WORKSPACE: ${{github.workspace}}
       run: |
         sh downloadTestData.sh
-    - uses: agahkarakuzu/moxunit-action@master
+    - uses: joergbrech/moxunit-action@master
       with:
         src: src
         data: Test/testData
