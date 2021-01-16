@@ -405,3 +405,4 @@ Making your MATLAB code Octave compatible is always a good idea. Yet, sometimes 
 Don’t worry, you won’t have to sell your soul to the devil to do it :) All it takes is to set up an Azure self-hosted agent.
 
 ### Good news: I wrote a [blog post](https://qmrlab.org/2020/06/16/matlab-ci.html) to explain how to do that! 
+
